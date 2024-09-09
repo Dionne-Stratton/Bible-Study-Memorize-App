@@ -1,9 +1,10 @@
 import "./App.css";
 import { Switch, Route } from "react-router-dom";
-import AddVerse from "./components/Vocabulary/AddVerse";
-import EditVerse from "./components/Vocabulary/EditVerse";
+import AddVerse from "./components/Views/AddVerse";
+import EditVerse from "./components/Views/EditVerse";
+import ViewVerse from "./components/Views/ViewVerse";
 import HeaderNav from "./components/HeaderNav";
-import ViewVerse from "./components/Vocabulary/ViewVerses";
+import ViewVerses from "./components/Views/ViewVerses";
 // import { useState, useEffect } from "react";
 import { verses } from "./DataSet/verses";
 // import axios from "axios";
@@ -33,9 +34,10 @@ function App() {
         <Route path="/add">{/* <AddVerse setVerses={setVerses} /> */}</Route>
         <Route path="/:id">
           {/* <EditVerse verses={verses} setVerses={setVerses} /> */}
+          <ViewVerse verses={verses} />
         </Route>
         <Route path="/">
-          <ViewVerse verses={verses} />
+          <ViewVerses verses={verses} />
         </Route>
       </Switch>
     </div>

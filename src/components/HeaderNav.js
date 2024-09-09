@@ -7,17 +7,19 @@ const HeaderNav = () => {
       <header>
         <div className="container">
           <div className="text-box">
-            <h1>Bible App</h1>
+            <NavLink to="/">
+              <h1>Bible App</h1>
+            </NavLink>
           </div>
         </div>
 
         <nav id="hnavbuttons">
-          <NavLink className="main-nav" activeClassName="active" to="/">
+          {/* <NavLink className="main-nav" activeClassName="active" to="/">
             View
-          </NavLink>
-          <NavLink className="main-nav" activeClassName="active" to="/add">
+          </NavLink> */}
+          {/* <NavLink className="main-nav" activeClassName="active" to="/add">
             Add
-          </NavLink>
+          </NavLink> */}
         </nav>
       </header>
     </div>
