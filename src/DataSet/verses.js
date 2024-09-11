@@ -1,4 +1,4 @@
-import Genesis1_1 from "./Files/Genesis1_1-slow.mp4";
+import Genesis1_1 from "./Files/Genesis1_1-med.mp4";
 import Genesis1_2 from "./Files/Genesis1_2-slow.mp4";
 // import Genesis1_3 from "./Files/Genesis1_3.mp4";
 // import Genesis1_4 from "./Files/Genesis1_4.mp4";
@@ -21,7 +21,7 @@ export const verses = [
       },
       { word: "בָּרָא", meaning: "created", reading: "bara" },
       { word: "אֱלֹהִים", meaning: "God", reading: "Elohim" },
-      { word: "הַשָּׁמַיִם", meaning: "heavens", reading: "hashamayim" },
+      { word: "הַשָּׁמַיִם", meaning: "the heavens", reading: "hashamayim" },
       { word: "וְאֵת", meaning: "and", reading: "v'et" },
       { word: "הָאָרֶץ", meaning: "the earth", reading: "ha'aretz" },
     ],

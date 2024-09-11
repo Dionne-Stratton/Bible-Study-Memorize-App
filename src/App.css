@@ -69,6 +69,71 @@ h6 {
   font-size: 2.5rem;
 }
 
+.app {
+  margin: 5%;
+}
+
+.main-page {
+  display: flex;
+  padding: 1% 3%;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.alefbet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* background-color: seagreen; */
+  padding: 2%;
+  /* border: #000000 1px solid; */
+}
+
+.paragraph-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: #000000 1px solid; */
+  margin: 3% 0;
+}
+
+.paragraph-image img {
+  margin-left: 5%;
+  height: auto;
+}
+
+.nikkud {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  padding: 2%;
+  /* border: #000000 1px solid; */
+}
+
+.dagesh {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  padding: 2%;
+  /* border: #000000 1px solid; */
+}
+
+.dagesh img {
+  height: 9rem;
+  margin: 3%;
+}
+
+.dagesh p {
+  font-size: 2.6rem;
+  margin: 3%;
+}
+
 nav {
   display: flex;
   /* margin-left: 2%; */
