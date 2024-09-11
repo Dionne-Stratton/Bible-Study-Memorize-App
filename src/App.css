@@ -91,6 +91,14 @@ h6 {
   /* border: #000000 1px solid; */
 }
 
+.alphabeta {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; */
+  padding: 2%;
+}
+
 .paragraph-image {
   display: flex;
   align-items: center;

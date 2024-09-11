@@ -5,6 +5,7 @@ import EditVerse from "./components/Views/EditVerse";
 import ViewVerse from "./components/Views/ViewVerse";
 import HeaderNav from "./components/HeaderNav";
 import Alefbet from "./components/Views/Alefbet";
+import AlphaBeta from "./components/Views/AlphaBeta";
 import ViewVerses from "./components/Views/ViewVerses";
 // import { useState, useEffect } from "react";
 import { verses } from "./DataSet/verses";
@@ -34,6 +35,9 @@ function App() {
       <Switch>
         <Route path="/alefbet">
           <Alefbet />
+        </Route>
+        <Route path="/alphabeta">
+          <AlphaBeta />
         </Route>
         <Route path="/add">{/* <AddVerse setVerses={setVerses} /> */}</Route>
         <Route path="/:id">

@@ -14,14 +14,21 @@ const HeaderNav = () => {
         </div>
 
         <nav id="hnavbuttons">
-          {/* <NavLink className="main-nav" activeClassName="active" to="/">
+          <NavLink className="main-nav" activeClassName="active" to="/">
             View
-          </NavLink> */}
+          </NavLink>
           {/* <NavLink className="main-nav" activeClassName="active" to="/add">
             Add
           </NavLink> */}
           <NavLink className="main-nav" activeClassName="active" to="/alefbet">
             Alefbet
+          </NavLink>
+          <NavLink
+            className="main-nav"
+            activeClassName="active"
+            to="/alphabeta"
+          >
+            AlphaBeta
           </NavLink>
         </nav>
       </header>
