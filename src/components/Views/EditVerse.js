@@ -18,10 +18,10 @@ export default function EditVerse(props) {
       setItem(item);
       setForm({
         reference: item.reference,
-        hebrewText: item.hebrewText,
+        hebrew: item.hebrew,
         pronunciation: item.pronunciation,
-        englishText: item.englishText,
-        englishVersion: item.englishVersion,
+        english: item.english,
+        version: item.version,
         notes: item.notes,
       });
     }
@@ -76,7 +76,7 @@ export default function EditVerse(props) {
             <input
               type="text"
               name="hebrew"
-              value={form.hebrewText}
+              value={form.hebrew}
               onChange={onchange}
             />
             <label> Reading: </label>
@@ -90,15 +90,15 @@ export default function EditVerse(props) {
             <input
               type="text"
               name="english"
-              value={form.englishText}
+              value={form.english}
               onChange={onchange}
             />
             <br></br>
-            <label>englishVersion: </label>
+            <label>version: </label>
             <input
               type="text"
-              name="englishVersion"
-              value={form.englishVersion}
+              name="version"
+              value={form.version}
               onChange={onchange}
             />
             <label> Notes: </label>
@@ -118,10 +118,10 @@ export default function EditVerse(props) {
         </div>
         <div className="viewEdit">
           <p>{item.reference}</p>
-          <p>{item.hebrewText}</p>
+          <p>{item.hebrew}</p>
           <p>{item.pronunciation}</p>
           <p>
-            {item.englishVersion}: {item.englishText}
+            {item.version}: {item.english}
           </p>
           <p>Notes: {item.notes}</p>
           <p>Files, audio or video will go here.</p>

@@ -15,7 +15,10 @@ const HeaderNav = () => {
 
         <nav id="hnavbuttons">
           <NavLink className="main-nav" activeClassName="active" to="/">
-            View
+            Study
+          </NavLink>
+          <NavLink className="main-nav" activeClassName="active" to="/memorize">
+            Memorize
           </NavLink>
           {/* <NavLink className="main-nav" activeClassName="active" to="/add">
             Add
@@ -29,6 +32,13 @@ const HeaderNav = () => {
             to="/alphabeta"
           >
             AlphaBeta
+          </NavLink>
+          <NavLink
+            className="main-nav"
+            activeClassName="active"
+            to="/resources"
+          >
+            Resources
           </NavLink>
         </nav>
       </header>

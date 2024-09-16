@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 
 export default function ViewVerse(props) {
   const { verses } = props;
   const { id } = useParams();
   const [verse, setVerse] = useState({});
   let parsedId = Number(id);
+  const history = useHistory();
 
   useEffect(() => {
     if (verses.length > 0) {
@@ -22,10 +23,10 @@ export default function ViewVerse(props) {
       <div className="verse-page">
         <div className="viewVerse">
           <h2>{verse.reference}</h2>
-          <h4>{verse.hebrewText}</h4>
+          <h4>{verse.hebrew}</h4>
           <h4>{verse.reading}</h4>
           <h4>
-            {verse.englishVersion}: {verse.englishText}
+            {verse.version}: {verse.english}
           </h4>
           <h4>Notes: {verse.notes}</h4>
         </div>
@@ -39,12 +40,17 @@ export default function ViewVerse(props) {
         </div>
       </div>
       <h3>Vocabulary</h3>
+      {/* add a button with the text of challenge that links to the challenge page on onClick */}
+      <button onClick={() => history.push(`/challenge/${verse._id}`)}>
+        Challenge
+      </button>
       <div className="vocab">
         {verse.hebrewVocab?.map((word, index) => {
           return (
             <div className="deets" key={index}>
               <p>{word.word}</p>
               <p>{word.reading}</p>
+              <p>{word.gender}</p>
               <p>{word.meaning}</p>
             </div>
           );

@@ -1,0 +1,71 @@
+.memory-grid-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns */
+  gap: 0; /* Remove all gaps between boxes */
+  justify-items: stretch; /* Ensure boxes stretch to fill the grid */
+  align-items: stretch; /* Ensure boxes stretch to fill the grid */
+  border: 1px solid #ccc; /* A border around the entire grid */
+  border-collapse: collapse; /* Make the entire grid collapse into one block */
+}
+
+.grid-item {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc; /* Keep internal borders */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Stretch width to fill grid space */
+  height: 150px; /* Keep larger height for readability */
+  font-weight: bold;
+  text-align: center;
+  word-break: break-word; /* Ensure text wraps within the box */
+  padding: 10px;
+  box-sizing: border-box; /* Include padding within width/height */
+}
+
+.grid-item:nth-child(5n) {
+  background-color: #c3e6f8;
+}
+
+.grid-item:hover {
+  background-color: rgba(151, 151, 151, 0.3);
+}
+
+.grid-item:nth-child(5n):hover {
+  background-color: rgb(167, 215, 252);
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}

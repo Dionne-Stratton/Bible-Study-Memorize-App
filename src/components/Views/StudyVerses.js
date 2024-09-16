@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const ViewVerses = (props) => {
+const StudyVerses = (props) => {
   const { verses } = props;
 
   const clearStyle = {
@@ -43,10 +43,10 @@ const ViewVerses = (props) => {
               {/* <div className="textbox"> */}
               <Link to={`/${verse._id}`} style={clearStyle}>
                 <p>{verse.reference}</p>
-                {/* <h4>{verse.hebrewText}</h4>
+                {/* <h4>{verse.hebrew}</h4>
                 <h4>{verse.reading}</h4>
                 <h4>
-                  {verse.englishVersion}: {verse.englishText}
+                  {verse.version}: {verse.english}
                 </h4>
                 <h4>{verse.notes}</h4>
                 <video controls>
@@ -63,4 +63,4 @@ const ViewVerses = (props) => {
   );
 };
 
-export default ViewVerses;
+export default StudyVerses;
