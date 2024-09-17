@@ -11,8 +11,9 @@ import Challenge from "./components/Views/Challenge";
 import Resources from "./components/Views/Resources";
 import MemoryGrid from "./components/Views/MemoryGrid";
 import Memorize from "./components/Views/Memorize";
+import Study from "./components/Views/Study";
 import { useState, useEffect } from "react";
-import { verses } from "./DataSet/verses";
+import { bibleData } from "./DataSet/OldTestamentStudy";
 // import axios from "axios";
 // import { testURL, liveURL } from "./BaseURLs";
 
@@ -54,15 +55,18 @@ function App() {
           <MemoryGrid memoryVerse={memoryVerse} />
         </Route>
         <Route path="/challenge/:id">
-          <Challenge verses={verses} />
+          <Challenge verses={bibleData} />
         </Route>
         <Route path="/add">{/* <AddVerse setVerses={setVerses} /> */}</Route>
         <Route path="/:id">
           {/* <EditVerse verses={verses} setVerses={setVerses} /> */}
-          <ViewVerse verses={verses} />
+          <ViewVerse verses={bibleData} />
         </Route>
-        <Route path="/">
+        {/* <Route path="/">
           <StudyVerses verses={verses} />
+        </Route> */}
+        <Route path="/">
+          <Study verses={bibleData} />
         </Route>
       </Switch>
     </div>

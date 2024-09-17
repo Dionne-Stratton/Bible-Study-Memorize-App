@@ -4,19 +4,15 @@ import { useParams, useHistory } from "react-router-dom";
 export default function ViewVerse(props) {
   const { verses } = props;
   const { id } = useParams();
-  const [verse, setVerse] = useState({});
-  let parsedId = Number(id);
-  const history = useHistory();
-
-  useEffect(() => {
-    if (verses.length > 0) {
-      let item = verses.filter((item) => item._id === parsedId)[0];
-      setVerse(item);
-    }
-    // eslint-disable-next-line
-  }, []);
-
-  console.log(verse);
+  // const history = useHistory();
+  const book = id.split("-")[0];
+  const chapter = id.split("-")[1];
+  const verseNum = id.split("-")[2];
+  let verse = verses[book][chapter][verseNum - 1][verseNum];
+  console.log("verse:", verse);
+  console.log("id", id);
+  console.log(`book: ${book}, chapter: ${chapter}, verse: ${verseNum}`);
+  console.log("verses", verses);
 
   return (
     <div>
@@ -32,7 +28,17 @@ export default function ViewVerse(props) {
         </div>
         <div className="video">
           {verse.spoken && (
-            <video controls>
+            <video
+              controls
+              style={{
+                width: "100%", // Responsive width
+                minWidth: "400px", // Minimum width
+                maxWidth: "800px", // Maximum width
+                minHeight: "300px", // Minimum height
+                maxHeight: "450px", // Maximum height
+                objectFit: "contain", // Ensures video fits the area without distortion
+              }}
+            >
               <source src={verse.spoken} type="video/mp4" />
               Your browser does not support the audio element.
             </video>
@@ -41,9 +47,9 @@ export default function ViewVerse(props) {
       </div>
       <h3>Vocabulary</h3>
       {/* add a button with the text of challenge that links to the challenge page on onClick */}
-      <button onClick={() => history.push(`/challenge/${verse._id}`)}>
+      {/* <button onClick={() => history.push(`/challenge/${verse._id}`)}>
         Challenge
-      </button>
+      </button> */}
       <div className="vocab">
         {verse.hebrewVocab?.map((word, index) => {
           return (

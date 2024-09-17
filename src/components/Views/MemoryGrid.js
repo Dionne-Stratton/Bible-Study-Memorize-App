@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../MemoryGrid.css";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const MemoryGrid = ({ memoryVerse }) => {
   const { reference, verses, verseLetters } = memoryVerse;
@@ -25,17 +26,24 @@ const MemoryGrid = ({ memoryVerse }) => {
 
   return (
     <div className="memory-grid-container">
+      {!verseLetters && (
+        <div>
+          <h1>No chapter selected! Please go back.</h1>
+          <Link to="/memorize">Go back</Link>
+        </div>
+      )}
       <h1>{reference}</h1>
       <div className="grid">
-        {verseLetters.map((letters, index) => (
-          <div
-            key={index}
-            className="grid-item"
-            onClick={() => openModal(verses[index])}
-          >
-            {letters}
-          </div>
-        ))}
+        {verseLetters &&
+          verseLetters.map((letters, index) => (
+            <div
+              key={index}
+              className="grid-item"
+              onClick={() => openModal(verses[index])}
+            >
+              {letters}
+            </div>
+          ))}
       </div>
 
       {modalData.isOpen && (

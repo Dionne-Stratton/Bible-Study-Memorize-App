@@ -27,7 +27,6 @@ const StudyVerses = (props) => {
 
   return (
     <div>
-      {/* <h2>Verses</h2> */}
       {verses.length === 0 && <p>Loading...</p>}
       <h3>Total Verses: {verses.length}</h3>
       <input
@@ -40,22 +39,10 @@ const StudyVerses = (props) => {
         {filteredVerses?.map((verse) => {
           return (
             <div className="aboutbox" key={verse._id}>
-              {/* <div className="textbox"> */}
               <Link to={`/${verse._id}`} style={clearStyle}>
                 <p>{verse.reference}</p>
-                {/* <h4>{verse.hebrew}</h4>
-                <h4>{verse.reading}</h4>
-                <h4>
-                  {verse.version}: {verse.english}
-                </h4>
-                <h4>{verse.notes}</h4>
-                <video controls>
-                  <source src={verse.spoken} type="video/mp4" />
-                  Your browser does not support the audio element.
-                </video> */}
               </Link>
             </div>
-            // </div>
           );
         })}
       </div>

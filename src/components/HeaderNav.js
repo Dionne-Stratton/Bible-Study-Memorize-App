@@ -23,16 +23,16 @@ const HeaderNav = () => {
           {/* <NavLink className="main-nav" activeClassName="active" to="/add">
             Add
           </NavLink> */}
-          <NavLink className="main-nav" activeClassName="active" to="/alefbet">
+          {/* <NavLink className="main-nav" activeClassName="active" to="/alefbet">
             Alefbet
-          </NavLink>
-          <NavLink
+          </NavLink> */}
+          {/* <NavLink
             className="main-nav"
             activeClassName="active"
             to="/alphabeta"
           >
             AlphaBeta
-          </NavLink>
+          </NavLink> */}
           <NavLink
             className="main-nav"
             activeClassName="active"
