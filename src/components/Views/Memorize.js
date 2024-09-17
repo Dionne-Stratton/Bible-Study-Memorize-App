@@ -23,22 +23,16 @@ const Memorize = (props) => {
       <h1>Memorize</h1>
       <div>
         <ul>
-          {memoryVerses.map(
-            (verse) => (
-              //console log verse to see what is being passed
-              console.log(verse),
-              (
-                <Link
-                  key={verse.reference}
-                  to={`/memory-grid`}
-                  onClick={() => handleVerseClick(verse)}
-                  style={clearStyle}
-                >
-                  <li>{verse.reference}</li>
-                </Link>
-              )
-            )
-          )}
+          {memoryVerses.map((verse) => (
+            <Link
+              key={verse.reference}
+              to={`/memory-grid`}
+              onClick={() => handleVerseClick(verse)}
+              style={clearStyle}
+            >
+              <li>{verse.reference}</li>
+            </Link>
+          ))}
         </ul>
       </div>
     </div>
