@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const clearStyle = {
-  textDecoration: "none",
-  color: "black",
-};
+// const clearStyle = {
+//   textDecoration: "none",
+//   color: "black",
+// };
 
 const Resources = () => {
   return (
