@@ -13,7 +13,7 @@ export const bibleData = {
           english: "In the beginning, God created the heavens and the earth.",
           version: "NIV",
           meditation:
-            'This verse is a beautiful depiction of God’s majesty and power and a reminder that everything started with Him and all creation comes from Him. As Paul said, "For from him and through him and to him are all things. To him be the glory forever! Amen." (Romans Romans 11:36)',
+            'This verse is a beautiful depiction of God’s majesty and power and a reminder that everything started with Him and all creation comes from Him. As Paul said, "For from him and through him and to him are all things. To him be the glory forever! Amen." (Romans 11:36)',
           application:
             "God created all things and is therefore worthy of all praise and worship.",
           spoken: Genesis1_1,

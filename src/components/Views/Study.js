@@ -9,8 +9,8 @@ const clearStyle = {
 const Study = (props) => {
   const { verses } = props;
   console.log("verses", verses);
-  const [expandedBook, setExpandedBook] = useState(null);
-  const [expandedChapter, setExpandedChapter] = useState(null);
+  const [expandedBook, setExpandedBook] = useState("Genesis");
+  const [expandedChapter, setExpandedChapter] = useState("1");
 
   const toggleBook = (book) => {
     setExpandedBook(expandedBook === book ? null : book);
@@ -23,7 +23,7 @@ const Study = (props) => {
 
   return (
     <div className="alphabeta">
-      <h1>Choose a Book</h1>
+      {/* <h1>Choose a Book</h1> */}
       {Object.keys(verses).map((book) => (
         <div key={book}>
           <h2 onClick={() => toggleBook(book)} style={{ cursor: "pointer" }}>
