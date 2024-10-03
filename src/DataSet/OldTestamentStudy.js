@@ -12,8 +12,10 @@ export const bibleData = {
           reading: "Bereshit bara Elohim et ha-shamaim ve-et ha-aretz",
           english: "In the beginning, God created the heavens and the earth.",
           version: "NIV",
-          notes:
-            "God created the heavens and the earth and is above all things. He is the 'uncaused cause' of all things.",
+          meditation:
+            'This verse is a beautiful depiction of God’s majesty and power and a reminder that everything started with Him and all creation comes from Him. As Paul said, "For from him and through him and to him are all things. To him be the glory forever! Amen." (Romans Romans 11:36)',
+          application:
+            "God created all things and is therefore worthy of all praise and worship.",
           spoken: Genesis1_1,
           hebrewVocab: [
             {
@@ -24,7 +26,7 @@ export const bibleData = {
             },
             {
               word: "בָּרָא",
-              meaning: "created",
+              meaning: "created out of nothing",
               reading: "bara",
               gender: "masculine",
             },
@@ -36,7 +38,7 @@ export const bibleData = {
             },
             {
               word: "הַשָּׁמַיִם",
-              meaning: "the heavens",
+              meaning: "the heavens - sky, space, the spiritual realm",
               reading: "hashamayim",
               gender: "masculine plural",
             },
@@ -60,7 +62,9 @@ export const bibleData = {
           english:
             "Now the earth was formless and empty and darkness was over the surface of the deep, and the Spirit of God was hovering over the waters",
           version: "NIV",
-          notes: "This is the second verse of the Bible",
+          meditation:
+            "In this passage, we see a profound spiritual truth: God is present even in chaos. His Spirit hovers over the dark, unformed places of our lives, preparing to bring order, light, and life. Just as the Ruach Elohim hovered over the deep before creation, God is near, actively working in the areas of our lives that feel void, chaotic, or dark.",
+          application: "",
           spoken: Genesis1_2,
           hebrewVocab: [
             {
@@ -77,7 +81,7 @@ export const bibleData = {
             },
             {
               word: "תֹהוּ",
-              meaning: "formless",
+              meaning: "formless, empty, confusion",
               reading: "tohu",
               gender: "masculine",
             },
@@ -101,13 +105,13 @@ export const bibleData = {
             },
             {
               word: "תְהוֹם",
-              meaning: "deep",
+              meaning: "deep, abyss",
               reading: "tehom",
               gender: "masculine",
             },
             {
               word: "וְרוּחַ",
-              meaning: "and Spirit",
+              meaning: "and Spirit, breath, wind",
               reading: "v'ruach",
               gender: "feminine",
             },
@@ -119,7 +123,7 @@ export const bibleData = {
             },
             {
               word: "מְרַחֶפֶת",
-              meaning: "was hovering",
+              meaning: "was hovering, brooding",
               reading: "m'rachefet",
               gender: "feminine",
             },

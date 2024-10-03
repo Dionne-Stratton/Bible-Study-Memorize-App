@@ -24,7 +24,8 @@ export default function ViewVerse(props) {
           <h4>
             {verse.version}: {verse.english}
           </h4>
-          <h4>Notes: {verse.notes}</h4>
+          <h6>Meditation: {verse.meditation}</h6>
+          <h6>Application: {verse.application}</h6>
         </div>
         <div className="video">
           {verse.spoken && (

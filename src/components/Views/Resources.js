@@ -102,7 +102,7 @@ const Resources = () => {
         </li>
         <li>
           <a
-            href="https://www.biblememory.com/"
+            href="https://biblememory.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
